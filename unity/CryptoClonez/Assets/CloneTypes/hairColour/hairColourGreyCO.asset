@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcaee41e1eade944b9b519b7b46c76e7, type: 3}
+  m_Name: hairColourGreyCO
+  m_EditorClassIdentifier: 
+  featureName: hair colour grey CO
+  type: 4
+  image: {fileID: 0}
+  material: {fileID: 2100000, guid: 095480fb427d3554a8549d4414626f8d, type: 2}
