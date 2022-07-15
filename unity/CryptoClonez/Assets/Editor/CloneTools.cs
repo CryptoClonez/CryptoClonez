@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.IO;
 
 [ExecuteInEditMode]
 public class CloneTools : EditorWindow
@@ -55,6 +56,12 @@ public class CloneTools : EditorWindow
                 GameObject.Find("CloneNavigation").GetComponent<CloneNavigation>().currentClone = cloneInput;
                 GameObject.Find("CloneNavigation").GetComponent<CloneNavigation>().SelectedClone();
             }
+
+            if (GUILayout.Button("Clean Up"))
+            {
+                CleanUp();
+            }
+
             cloneInput = EditorGUILayout.IntField(cloneInput);
             EditorGUILayout.EndHorizontal();
             autoPlay = EditorGUILayout.Toggle("Auto Play",autoPlay);
@@ -72,6 +79,15 @@ public class CloneTools : EditorWindow
                 time = 0f;
                 GameObject.Find("CloneNavigation").GetComponent<CloneNavigation>().RandomClone();
             }
+        }
+    }
+
+    private void CleanUp()
+    {
+        foreach (string file in Directory.GetFiles("Assets/Textures", "Generated", SearchOption.AllDirectories))
+        {
+            Debug.Log("deleting - " + file);
+            File.Delete(file);
         }
     }
 }

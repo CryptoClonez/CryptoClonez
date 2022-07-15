@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   featureName: spec style star CO
   type: 8
-  image: {fileID: 21300000, guid: 026eff8ee5b872847aae23c86dcd6bef, type: 3}
+  image: {fileID: 21300000, guid: 9e1baa5b53e5d1c4fa70ccc163b11096, type: 3}
   material: {fileID: 2100000, guid: 0a23ff267efcbcf489fd3dab4ab107d8, type: 2}

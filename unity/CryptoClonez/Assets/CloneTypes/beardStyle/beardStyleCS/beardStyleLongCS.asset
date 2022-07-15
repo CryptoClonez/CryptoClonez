@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   featureName: beard long CS
   type: 6
-  image: {fileID: 21300000, guid: 0cf7ef2f0fc166442ad969e27d695773, type: 3}
+  image: {fileID: 21300000, guid: 04c7f1e49c9adb043a726bb50ba783b0, type: 3}
   material: {fileID: 2100000, guid: f4ca737f86a538546883803ba73e99d6, type: 2}
